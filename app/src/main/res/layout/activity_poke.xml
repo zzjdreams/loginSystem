@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PokeActivity">
+
+
+    <Button
+        android:id="@+id/upload"
+        android:text="上传"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tip"
+        android:text="点击装备图片升级"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:textColor="#f00"
+        android:textSize="30sp"/>
+    <LinearLayout
+        android:layout_width="200px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tip">
+        <TextView
+            android:text="余额"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/remain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@id/pokeIMG"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30px">
+        <Button
+            android:text="拳套"
+            android:id="@+id/boxing"
+            android:background="@drawable/boxing"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10px"/>
+        <Button
+            android:text="护甲"
+            android:id="@+id/armour"
+            android:background="@drawable/armour"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10px"/>
+        <Button
+            android:text="鞋子"
+            android:id="@+id/shoe"
+            android:background="@drawable/shoe"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10px"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/adventure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="探险"
+        android:textSize="20sp"
+        android:textColor="#0ac"
+        android:layout_below="@id/pokeIMG"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:id="@+id/pokeIMG"
+        android:background="@drawable/qq_poke"
+
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/pokeIMG"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:text="生命值"
+                android:id="@+id/vitality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ProgressBar
+
+                android:id="@+id/vitality_Prog"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:max="100"
+                android:progress="50"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="力量"
+                android:id="@+id/power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ProgressBar
+
+                android:id="@+id/power_Prog"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:max="100"
+                android:progress="50"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="速度"
+                android:id="@+id/speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ProgressBar
+
+                android:id="@+id/speed_Prog"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:max="100"
+                android:progress="50"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">QQlogin</string>
+
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="power">力量值</string>
+    <string name="speed">速度值</string>
+    <string name="vitality">生命值</string>
+    <string name="remain">余额</string>
+
+</resources>
